@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- JIT 컴파일 허용 (Node.js native 모듈용) -->
+    <key>com.apple.security.cs.allow-jit</key>
+    <true/>
+
+    <!-- 서명되지 않은 실행 가능 메모리 허용 (OpenCV, Sharp 등) -->
+    <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+    <true/>
+
+    <!-- 다이나믹 라이브러리 로딩 허용 -->
+    <key>com.apple.security.cs.allow-dyld-environment-variables</key>
+    <true/>
+
+    <!-- 사용자 선택 파일 읽기/쓰기 (이미지 저장, 프로젝트 로드) -->
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+
+    <!-- 네트워크 액세스 (개발 서버, 업데이트 체크 등) -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+
+    <!-- Accessibility 권한 사용 (마우스/키보드 제어) -->
+    <key>com.apple.security.automation.apple-events</key>
+    <true/>
+</dict>
+</plist>
